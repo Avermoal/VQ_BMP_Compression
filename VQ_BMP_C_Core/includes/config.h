@@ -1,0 +1,10 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define DEFAULT_BLOCK_SIZE 4
+
+#define DEFAULT_CODEBOOK_SIZE 256
+
+#define MAX_FILE_PATH_LENGTH 256
+
+#endif/*CONFIG_H*/

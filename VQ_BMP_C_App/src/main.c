@@ -1,6 +1,8 @@
 #include <application.h>
 
+
 int main(void)
 {
-  return 0;
+  APP_EXIT_CODE exit_code = start_app();
+  return exit_code;
 }

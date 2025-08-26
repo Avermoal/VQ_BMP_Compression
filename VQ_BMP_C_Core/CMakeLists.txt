@@ -18,6 +18,8 @@ set(CORE_INCLUDES
 )
 
 set(CORE_SOURCES
+  src/application.c
+
   src/vq.c
 
   src/codebook.c
