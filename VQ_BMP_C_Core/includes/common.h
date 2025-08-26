@@ -19,4 +19,11 @@ typedef struct{
   pixel_t *data;
 }block_t;
 
+typedef enum{
+  VQ_SUCCESS = 0,
+  VQ_ERROR_IO,
+  VQ_ERROR_MEMORY,
+  VQ_ERROR_INVALID_FORMAT
+}vq_error_code;
+
 #endif/*COMMON_H*/

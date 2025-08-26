@@ -7,6 +7,6 @@ typedef enum {
   CRITICAL
 }APP_EXIT_CODE;
 
-APP_EXIT_CODE start_app();
+APP_EXIT_CODE start_app(void);
 
 #endif/*APPLICATION_H*/

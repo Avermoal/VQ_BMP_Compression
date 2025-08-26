@@ -10,12 +10,8 @@ add_executable(${APP_PROJECT_NAME}
 )
 
 target_link_libraries(${APP_PROJECT_NAME} VQ_BMP_C_Core)
-target_compile_features(${APP_PROJECT_NAME} PUBLIC cxx_std_23)
+target_compile_features(${APP_PROJECT_NAME} PUBLIC c_std_23)
 
-set_target_properties(${APP_PROJECT_NAME} PROPERTIES RUNTIME_OUTPUR_DIRECTORY ${CMKAE_BINARY_DIR}/bin/)
+set_target_properties(${APP_PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/)
 
-target_include_directories(${APP_PROJECT_NAME} PRIVATE ${GTK4_INCLUDE_DIRS})
-target_link_directories(${APP_PROJECT_NAME} PRIVATE ${GTK4_LIBRARY_DIRS})
-target_link_libraries(${APP_PROJECT_NAME} ${GTK4_LIBRARIES})
-
-target_compile_options(${APP_PROJECT_NAME} PRIVATE ${GTK4_CFLAGS_OTHER})
+target_link_libraries(${APP_PROJECT_NAME} PkgConfig::GTK4)
